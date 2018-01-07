@@ -1,0 +1,60 @@
+.open {
+  margin-top: 56px;
+}
+
+.side-nav .divider {
+  margin:0;
+}
+
+.side-nav li>a {
+  height: 30px;
+  line-height: 30px;
+}
+
+.side-nav .subheader {
+  line-height: 30px;
+}
+
+.options {
+  color: rgba(0,0,0,0.87) !important;
+  margin: 10px auto;
+}
+
+.bg-aquamar {
+  background-color: #65bba0;
+}
+
+.icon-container i {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.icon-container span {
+  display: block;
+}
+
+.icon-container .icon-preview {
+  height: 70px;
+  text-align: center;
+}
+
+.photo-perfil {
+  display:block;
+  margin:10px auto;
+  width: 220px;
+  height: 220px;
+}
+
+img {
+  width: 100%;
+}
+
+.img-icons {
+  width: 3em;
+  height: 3em;
+  margin-bottom: 5px;
+}
+
+.c-aquamar {
+  color: #65bba0;
+}
