@@ -1,6 +1,7 @@
 
-$ (document).ready(function(){
-  $(".button-collapse").sideNav();
+$(document).ready(function() {
+  // materialize
+  $('.button-collapse').sideNav();
 
 
   var $btnPublicar = $('#btn-publicar');
@@ -9,19 +10,15 @@ $ (document).ready(function(){
   /* Activar boton publicar */
   $txArea.keyup(function() {
     var longTxArea = $txArea.val().length;
-    longTxArea >= 1 ? activeButton () : desactiveButton();
+    longTxArea >= 1 ? activeButton() : desactiveButton();
   });
 
 
-
-
-
   // Aqui indicar que se puede implementar la función como variable
-  function activeButton () {
+  function activeButton() {
     $btnPublicar.removeClass('disabled');  
   }
   function desactiveButton() {
     $btnPublicar.addClass('disabled');
-  } 
-
+  }
 });

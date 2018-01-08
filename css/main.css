@@ -83,12 +83,28 @@ img {
   font-size: 10px;
 }
 
-.m-bttm-20 {
-  margin-bottom: 20px;
-}
-
 .btn-pub {
   letter-spacing: .1px;
   padding: 0 5px;
   margin: 5px 0 0 10px;
+}
+
+.row1 {
+  margin-bottom: 0px;
+}
+
+.p-10 {
+  padding: 10px !important;
+}
+
+.m-0 {
+  margin: 0  !important;
+}
+
+.w-wrap {
+  word-wrap: break-word;
+}
+
+.sticky-action {
+  padding-bottom: 20px !important;
 }
