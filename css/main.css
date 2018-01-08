@@ -132,3 +132,13 @@ img {
   position: relative;
   bottom: 20px;
 }
+
+#img-file{
+  width: 70px;
+  height: 70px;
+  margin-left: 10px;
+}
+
+.camera-icons {
+  font-size: 50px;
+}

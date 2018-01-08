@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -46,7 +45,11 @@
       </ul>
     </div>
   </nav>
-
+  <div class="row">
+    <a href="#">
+      <img src="assets/images/logo.jpg" alt="logo">
+    </a>
+  </div>
   <section class="container">
     <div class="row">
       <figure class="photo-perfil">
@@ -56,7 +59,7 @@
     </div>
     <div class="row icon-container">
       <div class="icon-preview col s3 offset-s1">
-        <a href="!#" class=""><i class="material-icons  grey-text">queue</i><span>Seguir</span></a>
+        <a href="#"><i class="material-icons  grey-text">queue</i><span>Seguir</span></a>
       </div>
       <div class="icon-preview col s4">
         <img class="img-icons" src="assets/images/dress.png" alt="vestido"><span>Mis Outfits</span>
@@ -134,23 +137,21 @@
         <form class="input-field m-0">
           <input type="text" class="validate right" placeholder="Titulo">  
           <textarea id="textarea2" class="materialize-textarea  right" placeholder="Escribe un comentario..."></textarea>     
-          <div class="file-field">
-            <div class="btn"><i class="material-icons">camera_alt</i>
-              <input type="file">
-            </div>
-            <div class="file-path-wrapper">
-              <input class="file-path">
-            </div>
-          </div>
-        </form> 
-           
-        <div class="photo-select">
-          <img src="assets/images/outfits2.jpg" alt="outfits2">
-        </div>
+        </form>
       </div>
       <div class="modal-footer">
-        <div class="row m-0">
-          <a href="#" class="modal-action bg-aquamar btn col s12 offset-s3 center">Publicar</a>
+        <form action="#">
+          <div class="file-field input-field">
+            <a class="left c-aquamar">
+              <i class="material-icons camera-icons">camera_alt</i>
+              <input type="file">
+            </a>
+            <input type='file' onchange="readURL(this);"/>
+            <img id="img-file" src="assets/images/outfits2.jpg" alt="img"/>
+          </div>
+        </form>
+        <div class="row">
+          <a href="#" class="modal-action bg-aquamar btn right col s12">Publicar</a>
         </div>
       </div>
     </div>
