@@ -45,6 +45,13 @@
   height: 220px;
 }
 
+.photo-perfil-circule {
+  margin:5px;
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+}
+
 img {
   width: 100%;
 }
@@ -57,4 +64,31 @@ img {
 
 .c-aquamar {
   color: #65bba0;
+}
+
+.create {
+  text-transform: lowercase !important;
+  color: #039be5 !important;
+}
+
+.create:hover {
+  color: #055980 !important;   
+}
+
+.pointer {
+  cursor: pointer
+}
+
+.f-size-10 {
+  font-size: 10px;
+}
+
+.m-bttm-20 {
+  margin-bottom: 20px;
+}
+
+.btn-pub {
+  letter-spacing: .1px;
+  padding: 0 5px;
+  margin: 5px 0 0 10px;
 }
