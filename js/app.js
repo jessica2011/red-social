@@ -2,6 +2,7 @@
 $(document).ready(function() {
   // materialize
   $('.button-collapse').sideNav();
+  $('.modal').modal();
 
 
   var $btnPublicar = $('#btn-publicar');

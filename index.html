@@ -18,7 +18,7 @@
       <a href="#" class="brand-logo hide-on-med-and-down">Logo</a>
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">settings</i></a>
       <ul class="right">
-        <li><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Añade tu outfits"><i class="material-icons">add_a_photo</i></a></li>
+        <li><a href="#modal1" class="tooltipped modal-trigger" data-position="bottom" data-delay="50" data-tooltip="Añade tu outfits"><i class="material-icons">add_a_photo</i></a></li>
         <li><a href="#"><i class="material-icons">search</i></a></li>
         <li><a class="dropdown-button" href="#" data-activates="dropdown1">Paula Ramos.<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
@@ -49,7 +49,10 @@
 
   <section class="container">
     <div class="row">
-      <figure class="photo-perfil"><img src="assets/images/user.png" alt="Foto Perfil"></figure>
+      <figure class="photo-perfil">
+        <img src="assets/images/user.png" alt="Foto Perfil">
+        <p class="name-user center">Paula Ramos A.</p>
+      </figure>
     </div>
     <div class="row icon-container">
       <div class="icon-preview col s3 offset-s1">
@@ -106,7 +109,7 @@
             <div class="row row1">
               <div class="input-field m-0">
                 <a href="#" class="prefix"><img src="assets/images/user2.jpg" alt="user" class="photo-perfil-circule"></a> 
-                <p class="col s10 right m-0 w-wrap p-10 white">Excelente combinación</p>    
+                <p class="col s10 m11 right m-0 w-wrap p-10 white">Excelente combinación</p>    
               </div>
             </div>
           </div>
@@ -114,7 +117,7 @@
             <div class="row row1">
               <div class="input-field m-0">
                 <a href="#" class="prefix"><img src="assets/images/user3.jpg" alt="user" class="photo-perfil-circule"></a> 
-                <p class="col s10 right m-0 w-wrap p-10 white">Me encanta, me copiaré tu estilo :)</p>    
+                <p class="col s10 m11 right m-0 w-wrap p-10 white">Me encanta, me copiaré tu estilo :)</p>    
               </div>
             </div>
           </div>
@@ -122,6 +125,39 @@
       </div>
     </div>
   </section>
+  <!-- Modal para añadir publicación -->
+  <section>
+    <div id="modal1" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <a href="#"><img src="assets/images/user.png" alt="user" class="photo-perfil-circule"></a>
+        <span class="name">Paula Ramos</span>
+        <form class="input-field m-0">
+          <input type="text" class="validate right" placeholder="Titulo">  
+          <textarea id="textarea2" class="materialize-textarea  right" placeholder="Escribe un comentario..."></textarea>     
+          <div class="file-field">
+            <div class="btn"><i class="material-icons">camera_alt</i>
+              <input type="file">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path">
+            </div>
+          </div>
+        </form> 
+           
+        <div class="photo-select">
+          <img src="assets/images/outfits2.jpg" alt="outfits2">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row m-0">
+          <a href="#" class="modal-action bg-aquamar btn col s12 offset-s3 center">Publicar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+      
+    
   
   
 
