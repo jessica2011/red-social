@@ -1,5 +1,5 @@
 $(document).ready(function() {
-// firebase
+  // firebase
   var config = {
     apiKey: 'AIzaSyDPvJ1_QFhfrqTmC-v0DvGvi7BRUUCHrZ8',
     authDomain: 'redsocial-f8ee9.firebaseapp.com',
@@ -10,29 +10,6 @@ $(document).ready(function() {
   };
   firebase.initializeApp(config);
   
-
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId: '{your-app-id}',
-      cookie: true,
-      xfbml: true,
-      version: '{latest-api-version}'
-    });
-      
-    FB.AppEvents.logPageView();
-  };
-
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {
-      return;
-    }
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_US/sdk.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-
-
   // Registro de usuarios
   $('#btn-sign').click(function() {
     var $valEmail = $('#email').val();
@@ -41,8 +18,8 @@ $(document).ready(function() {
       .catch(function(error) {
         var errorCode = error.code;
         var errorMessage = error.message;
-        alert(errorCode);
-        alert(errorMessage);
+        console.log(errorCode);
+        console.log(errorMessage);
       });
   });
 
@@ -54,25 +31,25 @@ $(document).ready(function() {
       .catch(function(error) {
         var errorCode = error.code;
         var errorMessage = error.message;
-        alert(errorCode);
-        alert(errorMessage);
+        console.log(errorCode);
+        console.log(errorMessage);
       });
   });
 
-  $('#btn-face').click(function() {
-    var provider = new firebase.auth.FacebookAuthProvider();
+  // $('#btn-face').click(function() {
+  //   var provider = new firebase.auth.FacebookAuthProvider();
 
 
-    firebase.auth().getRedirectResult().then(function(result) {
-      if (result.credential) {
-        var token = result.credential.accessToken;
-      }
-      var user = result.user;
-    }).catch(function(error) {
-      var errorCode = error.code;
-      var errorMessage = error.message;
-      var email = error.email;
-      var credential = error.credential;
-    });
-  });
+  //   firebase.auth().getRedirectResult().then(function(result) {
+  //     if (result.credential) {
+  //       var token = result.credential.accessToken;
+  //     }
+  //     var user = result.user;
+  //   }).catch(function(error) {
+  //     var errorCode = error.code;
+  //     var errorMessage = error.message;
+  //     var email = error.email;
+  //     var credential = error.credential;
+  //   });
+  // });
 });
