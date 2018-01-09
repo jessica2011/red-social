@@ -18,28 +18,45 @@
   padding: 2em;
 }
 
+.h-20vh {
+  height: 20vh;
+}
+
+.h-80vh {
+  height: 80vh;
+}
+
+.p-0 {
+  padding: 0px !important;
+}
+
 .bg-gif {
   background-image: url('../assets/images/gifs-animados-moda-479273.gif');
+<<<<<<< HEAD
+=======
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   height: 81vh;
+>>>>>>> e680003ac27dfce993bc8bac8f35805503752de0
 }
 
-.mainbot {
+.btn1 {
   border: 2px solid palevioletred;
-  color: black; 
-  font-weight: bolder;
+  color: black;
   border-radius: 15px;
+<<<<<<< HEAD
   font-size: 15px;
   margin: 10px;
   position: relative;
   top: 60vh;
   padding: 10px;
 
+=======
+>>>>>>> e35f7401d974d3a9bcebeb199777f61ceecf8be8
 }
 
-.mainbot:hover {
+.btn1:hover {
   background: linear-gradient(rgb(197, 8, 129) 25%, rgb(255,168,52));
 }
 
@@ -50,7 +67,12 @@
   background-repeat: no-repeat;
   background-size: cover; 
   width: 100%;
+<<<<<<< HEAD
+  height: 100vh;
+}
+=======
 }*/
+>>>>>>> e680003ac27dfce993bc8bac8f35805503752de0
 
 .open {
   margin-top: 56px;
@@ -67,6 +89,10 @@
 .h-100p {
   height: 100%;
 }
+.h-50p {
+  height: 25vh;
+  width: 100%
+}
 
 .side-nav li>a {
   height: 30px;
@@ -75,6 +101,11 @@
 
 .side-nav .subheader {
   line-height: 30px;
+}
+
+.logo-2 {
+  height: 120px;
+  width: 180px;
 }
 
 .options {
