@@ -5,38 +5,45 @@
   <title>Document</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="../assets/icons/css-fonts/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="col s8 offset-s2">
-        <img src="" alt="logo">
-      </div>
-      <form class="col s8 offset-s2">
+<body class="bg-whitesmoke">
+  <div class="row m-0">
+    <div class="col s12 m6 offset-m3 white  vh-100 ">
+      <br>
+      <figure>
+        <img src="../assets/images/logo_fondoblanco.png" alt="logo">
+      </figure>
+      <form class="col s10 offset-s1 ">
         <div class="row">
-          <div class="input-field">
-            <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-            <label for="first_name">First Name</label>
+          <div class="input-field m-0">
+            <i class="material-icons prefix font-size-20 c-aquamar">mail_outline</i>
+            <input id="email" type="email" class="validate" placeholder="Email">
           </div>
         </div>
         <div class="row">
-          <div class="input-field ">
-            <input id="password" type="password" class="validate">
-            <label for="password">Password</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field ">
-            <input id="email" type="email" class="validate">
-            <label for="email">Email</label>
+          <div class="input-field m-0">
+            <i class="material-icons prefix font-size-20 c-aquamar">lock_outline</i>
+            <input id="password" type="password" class="validate" placeholder="Contraseña">
           </div>
         </div>
       </form>
-
+      <div class="row">
+        <a class="waves-effect waves-light btn c-aquamar white-text col s8 offset-s2">Iniciar Sesión</a>
+      </div>
+      <div class="line col s10 offset-s1"></div>
+      <div class="or">OR</div>
+      <div>
+        <p class="center m-0"><a href="#"><i class="fa fa-facebook-official fa-2x c-fb"></i><span class="p-10">Iniciar Sesión con Facebook</span></a></p>
+        <p class="center f-size-10"><a href="#">¿Se olvidó la contraseña?</a></p>
+        <p class="center">¿No tienes una cuenta? <a href="sign-up.html">Registrate</a></p>
+      </div>
+      
+      
     </div>
-
   </div>
+
   
 
 
