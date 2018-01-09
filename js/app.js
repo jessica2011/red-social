@@ -33,7 +33,6 @@ $(document).ready(function() {
   var validEmail = false; 
   var validPassword = false;  
 
-
   // Aqui indicar que se puede implementar la función como variable
   function activeButton() {
     if (validPassword && validEmail) {
@@ -67,7 +66,6 @@ $(document).ready(function() {
 
   $btnSign.on('click', function() {
     $(location).attr('href', '../views/perfil-user.html');
-    alert('Usted se registro correctamente');
   });
 });
 
