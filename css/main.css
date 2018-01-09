@@ -12,6 +12,12 @@
   padding: 2em;
 }
 
+.container-flex-column2 {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+
 .bg-gif {
   background-image: url('../assets/images/gifs-animados-moda-479273.gif');
   height: 81vh;
@@ -22,20 +28,17 @@
   color: black; 
   font-weight: bolder;
   border-radius: 15px;
-  display: inline;
-  padding: 1em;
-  margin: 1em;
-  margin-left: 25px;
+  font-size: 20px;
   position: relative;
-  top: 80%;
+  top: 60vh;
+  padding: 10px;
 }
 
 .mainbot:hover {
   background: linear-gradient(rgb(197, 8, 129) 25%, rgb(255,168,52));
 }
 
-.splash {
-  background-color: white;
+.bg-img {
   background-position: center bottom; 
   background-repeat: no-repeat;
   background-size: cover; 
