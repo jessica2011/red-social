@@ -23,7 +23,9 @@
 }
 
 .h-80vh {
-  height: 80vh;
+  height: 100vh;
+  bottom: 50vh;
+  margin-top: 20%;
 }
 
 .p-0 {
@@ -36,15 +38,28 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 81vh;
+  width: 100vw;
+  bottom: 2px;
+  position: absolute;
+}
+.row-bot {
+  margin-top: 100%;
+  margin-left: 12%;
 }
 
-.btn1 {
-  border: 2px solid palevioletred;
+.mainbot {
+  padding: 1.5rem;
+  display: inline-block;
+  width: 30vw;
+  border: 2px solid peachpuff;
   color: black;
   border-radius: 15px;
+  display: inline-block;
+  margin: 1em;
+  font-size: 12px;
 }
 
-.btn1:hover {
+.mainbot:hover {
   background: linear-gradient(rgb(197, 8, 129) 25%, rgb(255,168,52));
 }
 
@@ -264,10 +279,6 @@ footer p{
   margin: 0%;
   padding: 0%; 
 } 
-
-.input-field {
-  color: white; 
-}
 
 .card .card-title {
   font-size: 15px;
