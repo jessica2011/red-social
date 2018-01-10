@@ -78,13 +78,13 @@
       </div> -->
     </div>
   </section>
-  <section class="container">
+  <section id="box-posteo" class="container">
     <div class="row">
       <div class="card sticky-action col s12 l6 offset-l3  light-blue lighten-5">
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" src="../assets/images/outfits1.jpg">
         </div>
-        <div class="card-action p-10">
+        <div id="insert-title" class="card-action p-10">
           <h5>Outfits con estilo</h5>
           <p>Creado por <a href="#" class="create c-aquamar">paula.m.ramosr.14</a></p>
           <p>Publicado el 4 de enero del 2018</p>
@@ -95,20 +95,20 @@
           <span class="center-align f-size-10 col s4 activator"><i class="material-icons pointer c-aquamar"> more_vert</i></span>
           <br>
         </div>
-        <div class="card-reveal">
+        <div class="card-reveal" id="insert-comment">
           <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-          <p>Inspiración de moda y estilo de vida para la mujer de hoy</p>
+          <p >Inspiración de moda y estilo de vida para la mujer de hoy</p>
         </div>
         <div class="card-action p-10">
           <div class="row row1">
             <form class="input-field">
               <a href="#" class="prefix"><img src="../assets/images/user.png" alt="user" class="photo-perfil-circule"></a> 
-              <a class="btn btn-pub bg-aquamar right disabled btn-active-js">Publicar</a>
+              <a id="btn-comment" class="btn btn-pub bg-aquamar right disabled">Publicar</a>
               <textarea id="textarea1" class="materialize-textarea col s7 m9 l7 right" placeholder="Escribe un comentario..."></textarea>     
             </form>
           </div>  
         </div>
-        <div class="comentarios">
+        <div id="box-content" class="comentarios">
           <div class="card-action p-10">
             <div class="row row1">
               <div class="input-field m-0">
@@ -136,7 +136,7 @@
         <a href="#"><img src="../assets/images/user.png" alt="user" class="photo-perfil-circule"></a>
         <span class="name">Paula Ramos</span>
         <form class="input-field m-0">
-          <input type="text" class="validate right" placeholder="Titulo">  
+          <input id="title-modal" type="text" class="validate right" placeholder="Titulo">  
           <textarea id="textarea2" class="materialize-textarea  right" placeholder="Escribe un comentario..."></textarea>     
         </form>
       </div>
@@ -152,7 +152,7 @@
           </div>
         </form>
         <div class="row">
-          <a href="#" class="modal-action bg-aquamar btn right col s12">Publicar</a>
+          <a href="#" id="btn-modal-publicar" class="modal-action bg-aquamar btn right col s12">Publicar</a>
         </div>
       </div>
     </div>
@@ -165,6 +165,6 @@
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script src="../js/firebase.js"></script>
-  <script type="text/javascript" src="../js/app.js"></script>
+  <script type="text/javascript" src="../js/perfil-user.js"></script>
 </body>
 </html>
