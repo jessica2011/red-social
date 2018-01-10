@@ -43,20 +43,22 @@
   position: absolute;
 }
 .row-bot {
-  margin-top: 100%;
-  margin-left: 12%;
+  margin-top: 90%;
+  margin-left: 3%;
 }
 
 .mainbot {
-  padding: 1.5rem;
+  padding: 30px 30px 80px 30px;
   display: inline-block;
   width: 30vw;
-  border: 2px solid peachpuff;
-  color: black;
+  border: 3px solid palevioletred;
+  color:black;
   border-radius: 15px;
   display: inline-block;
-  margin: 1em;
-  font-size: 12px;
+  margin: 6rem;
+  font-size: 30px;
+  font-weight: bolder;
+  letter-spacing: 2px;
 }
 
 .mainbot:hover {
