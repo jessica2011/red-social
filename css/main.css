@@ -32,6 +32,8 @@
   padding: 0px !important;
 }
 
+/*Vista Index*/
+
 .bg-gif {
   background-image: url('../assets/images/gifs-animados-moda-479273.gif');
   background-position: center bottom;
@@ -51,8 +53,9 @@
   padding: 30px 30px 80px 30px;
   display: inline-block;
   width: 30vw;
-  border: 3px solid palevioletred;
-  color:black;
+  background: linear-gradient(rgb(236, 118, 125) 45%, rgb(255,168,52));
+  border: 3px solid salmon;
+  color:white;
   border-radius: 15px;
   display: inline-block;
   margin: 6rem;
@@ -62,17 +65,9 @@
 }
 
 .mainbot:hover {
-  background: linear-gradient(rgb(197, 8, 129) 25%, rgb(255,168,52));
+  background: transparent;
+  color: black;
 }
-
-/*.splash {
-  background-color: white;
-.bg-img {
-  background-position: center bottom; 
-  background-repeat: no-repeat;
-  background-size: cover; 
-  width: 100%;
-}*/
 
 .open {
   margin-top: 56px;
@@ -112,7 +107,8 @@
   color: rgba(0,0,0,0.87) !important;
   margin: 10px auto;
 }
-
+ 
+/*Vistas Sign up y Log In*/
 .bg-aquamar {
   background-color: #65bba0;
 }
@@ -133,6 +129,16 @@
 .icon-container .icon-preview {
   height: 70px;
   text-align: center;
+}
+
+/*Vista Perfil User*/
+
+.bg-image {
+  background-image: url('../assets/images/fondo.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 
 .photo-perfil {
@@ -162,6 +168,10 @@ img {
   width: 3em;
   height: 3em;
   margin-bottom: 5px;
+}
+
+.bg-salmon {
+  color: lightcoral;
 }
 
 .c-aquamar {
