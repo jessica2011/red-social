@@ -13,9 +13,10 @@
     <div class="col s12 m6 offset-m3 white  vh-100 h-100p">
       <br><br>
       <img src="../assets/images/logo_fondoblanco.png" alt="logo">
-      <a class="btn-face btn col s10 offset-s1 indigo darken-2">
-        <i class="fa fa-facebook-official fa-2x white-text"></i>
-        <span class="white-text">Iniciar Sesión con Facebook</span>
+      <fb:login-button data-auto-logout-link="true" scope="public_profile,email" size="large"></fb:login-button>
+      <a id="btnGoogle" class="btn col s10 offset-s1 red darken-3">
+        <i class="fa fa-google-plus-square fa-2x"></i>
+        <span class="white-text">Iniciar Sesión con Google+</span>
       </a>
       <br><br><br><br>
       <div class="line col s10 offset-s1"></div>
@@ -55,7 +56,7 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script type="text/javascript" src="../perfil.js"></script>
+  <script type="text/javascript" src="../js/perfil.js"></script>
   
   <script type="text/javascript" src="../js/app.js"></script>
 </body>
