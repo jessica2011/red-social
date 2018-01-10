@@ -32,28 +32,16 @@
 
 .bg-gif {
   background-image: url('../assets/images/gifs-animados-moda-479273.gif');
-<<<<<<< HEAD
-=======
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   height: 81vh;
->>>>>>> e680003ac27dfce993bc8bac8f35805503752de0
 }
 
 .btn1 {
   border: 2px solid palevioletred;
   color: black;
   border-radius: 15px;
-<<<<<<< HEAD
-  font-size: 15px;
-  margin: 10px;
-  position: relative;
-  top: 60vh;
-  padding: 10px;
-
-=======
->>>>>>> e35f7401d974d3a9bcebeb199777f61ceecf8be8
 }
 
 .btn1:hover {
@@ -67,12 +55,7 @@
   background-repeat: no-repeat;
   background-size: cover; 
   width: 100%;
-<<<<<<< HEAD
-  height: 100vh;
-}
-=======
 }*/
->>>>>>> e680003ac27dfce993bc8bac8f35805503752de0
 
 .open {
   margin-top: 56px;
@@ -272,3 +255,34 @@ footer p{
   background-color: white;
   bottom: 15px;
 }
+
+/*Vista News-feed*/
+
+.logo-rosa {
+  height: 49px;
+  width: 53px;
+  margin: 0%;
+  padding: 0%; 
+} 
+
+.input-field {
+  color: white; 
+}
+
+.card .card-title {
+  font-size: 15px;
+  line-height: 15px !important;
+}
+
+.small {
+  height: 2rem;
+  width: 2rem;
+}
+
+.small-let{
+  font-size: 11px;
+  position: relative;
+  bottom: 8px;
+}
+
+ 

@@ -3,33 +3,261 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
-  <div>
-    <nav>
-      <ul id="slide-out" class="side-nav">
-        <li><div class="user-view">
-          <div class="background">
-            <img src="../assets/images/fondo.jpg">
-          </div>
-          <a href="#!user"><img class="circle" src="../assets/images/user.png"></a>
-          <a href="#!nickname"><span class="gray-text name">@pau123</span></a>
-          <a href="#!closet"><span class="pink-text email">Ver closet</span></a>
-        </div></li>
-        <li><a href="#!">Notificaciones</a></li>
-        <li><a href="#!">Mis favoritos</a></li>
-        <li><a href="#!">Mis compras</a></li>
-        <li><a href="#!">Mis ventas</a></li>
-        <li><div class="divider"></div></li>
-        <li><a href="#!">Configuracion de cuenta</a></li>
-        <li><a class="waves-effect" href="#!">Cerrar sesión</a></li>
-      </ul>
+  <nav>
+    <ul id="slide-out" class="side-nav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="../assets/images/fondo.jpg">
+        </div>
+        <a href="#!user"><img class="circle" src="../assets/images/user.png"></a>
+        <a href="#!nickname"><span class="gray-text name">@pau123</span></a>
+        <a href="#!closet"><span class="pink-text email">Ver closet</span></a>
+      </div></li>
+      <li><a href="#!">Notificaciones</a></li>
+      <li><a href="#!">Mis favoritos</a></li>
+      <li><a href="#!">Mis compras</a></li>
+      <li><a href="#!">Mis ventas</a></li>
+      <li><div class="divider"></div></li>
+      <li><a href="#!">Configuracion de cuenta</a></li>
+      <li><a class="waves-effect" href="#!">Cerrar sesión</a></li>
+    </ul>
+    <div class="row">
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-    </nav>
-  </div>  
+      <img class="logo-rosa col s3" src="../assets/images/iconocf.png" alt="logo">
+      <form>
+        <div class="input-field col s6">
+          <input class="transparent" id="search" type="search" placeholder="¿Qué quieres comprar?" required>
+          <i class="material-icons">search</i>
+        </div>
+      </form>
+      <a href="#!vende"><i class="large material-icons">attach_money</i></a>
+    </div>
+  </nav>
+  <section class="container-flex deep-orange lighten-4">
+    <div class="row">
+      <div class="col s12">
+        <div class="card col s6">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="../assets/images/fig1.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Botines nuevos SM<i class="material-icons right">more_vert</i></span>
+            <a href="#!love"><i class="small material-icons teal-text text-lighten-2">favorite_border</i></a>
+            <a href="#!comment"><i class="small material-icons teal-text text-lighten-2">comment</i></a>
+            <a href="#!share"><i class="small material-icons teal-text text-lighten-2">share</i></a>
+            <div class="divider"></div>
+            <br>
+            <a href="#!user"><img class="circle small" src="../assets/images/user2.jpg"></a>
+            <a href="#!nickname"><span class="teal-text name small-let text-lighten-2">@lula44</span></a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">S/100.00<i class="material-icons right">close</i></span>
+            <br>
+            <span>Color: Taupe<br>Size:37<br>Taco:5<br>Incluye caja y bolsa de regalo.</span>
+            <br>
+            <br>
+            <a class="waves-effect waves-light btn">Comprar</a>
+            <br>
+            <br>
+            <a href="#!shop"><i class="small material-icons teal-text text-lighten-2">shopping_cart</i><span class="gray-text name small-let text-darken-4">Añadir al carrito</span></a>
+          </div>
+        </div>
+        <div class="card col s6">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="../assets/images/fig2.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Suéter de hilo F21<i class="material-icons right">more_vert</i></span>
+            <a href="#!love"><i class="small material-icons teal-text text-lighten-2">favorite_border</i></a>
+            <a href="#!comment"><i class="small material-icons teal-text text-lighten-2">comment</i></a>
+            <a href="#!share"><i class="small material-icons teal-text text-lighten-2">share</i></a>
+            <div class="divider"></div>
+            <br>
+            <a href="#!user"><img class="circle small" src="../assets/images/user3.jpg"></a>
+            <a href="#!nickname"><span class="teal-text name small-let text-lighten-2">@misscriss</span></a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">S/30.00<i class="material-icons right">close</i></span>
+            <br>
+            <span>Suéter en excelente condición, ya que solo lo usé una vez.<br>Muy suave y cómodo.<br>Talla:L<br>Look:Relajado</span>
+            <br>
+            <br>
+            <a class="waves-effect waves-light btn">Comprar</a>
+            <br>
+            <br>
+            <a href="#!shop"><i class="small material-icons teal-text text-lighten-2">shopping_cart</i><span class="gray-text name small-let text-darken-4">Añadir al carrito</span></a>
+          </div>
+        </div>  
+        <div class="card col s6">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="../assets/images/fig3.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Falda de tul rosado Forever21<i class="material-icons right">more_vert</i></span>
+            <a href="#!love"><i class="small material-icons teal-text text-lighten-2">favorite_border</i></a>
+            <a href="#!comment"><i class="small material-icons teal-text text-lighten-2">comment</i></a>
+            <a href="#!share"><i class="small material-icons teal-text text-lighten-2">share</i></a>
+            <div class="divider"></div>
+            <br>
+            <a href="#!user"><img class="circle small" src="../assets/images/user.png"></a>
+            <a href="#!nickname"><span class="teal-text name small-let text-lighten-2">@chocoho</span></a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">S/20.00<i class="material-icons right">close</i></span>
+            <br>
+            <p>Hermosa falda de tul con brillos.<br>Talla:L<br>Esta en excelente condición.</p>
+            <br>
+            <br>
+            <a class="waves-effect waves-light btn">Comprar</a>
+            <br>
+            <br>
+            <a href="#!shop"><i class="small material-icons teal-text text-lighten-2">shopping_cart</i><span class="gray-text name small-let text-darken-4">Añadir al carrito</span></a>
+          </div>
+        </div>  
+        <div class="card col s6">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="../assets/images/fig4.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Sandalias altas con plataforma<i class="material-icons right">more_vert</i></span>
+            <a href="#!love"><i class="small material-icons teal-text text-lighten-2">favorite_border</i></a>
+            <a href="#!comment"><i class="small material-icons teal-text text-lighten-2">comment</i></a>
+            <a href="#!share"><i class="small material-icons teal-text text-lighten-2">share</i></a>
+            <div class="divider"></div>
+            <br>
+            <a href="#!user"><img class="circle small" src="../assets/images/user2.jpg"></a>
+            <a href="#!nickname"><span class="teal-text name small-let text-lighten-2">@lula44</span></a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">S/75.00<i class="material-icons right">close</i></span>
+            <br>
+            <p>Lindo par de zapatos,marca Zara.<br>Talla:8<br>Excelente condición.</p>
+            <br>
+            <br>
+            <a class="waves-effect waves-light btn">Comprar</a>
+            <br>
+            <br>
+            <a href="#!shop"><i class="small material-icons teal-text text-lighten-2">shopping_cart</i><span class="gray-text name small-let text-darken-4">Añadir al carrito</span></a>
+          </div>
+        </div> 
+        <div class="card col s6">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="../assets/images/fig5.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Hermoso clutch Viviene Westwood<i class="material-icons right">more_vert</i></span>
+            <a href="#!love"><i class="small material-icons teal-text text-lighten-2">favorite_border</i></a>
+            <a href="#!comment"><i class="small material-icons teal-text text-lighten-2">comment</i></a>
+            <a href="#!share"><i class="small material-icons teal-text text-lighten-2">share</i></a>
+            <div class="divider"></div>
+            <br>
+            <a href="#!user"><img class="circle small" src="../assets/images/user3.jpg"></a>
+            <a href="#!nickname"><span class="teal-text name small-let text-lighten-2">@misscriss</span></a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">S/210.00<i class="material-icons right">close</i></span>
+            <br>
+            <p>Hecha en cuero, doble cierre.<br>Original S/700.00, comprada en oferta a S/300.00.</p>
+            <br>
+            <br>
+            <a class="waves-effect waves-light btn">Comprar</a>
+            <br>
+            <br>
+            <a href="#!shop"><i class="small material-icons teal-text text-lighten-2">shopping_cart</i><span class="gray-text name small-let text-darken-4">Añadir al carrito</span></a>
+          </div>
+        </div>
+        <div class="card col s6">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="../assets/images/fig6.jpeg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Blazer floreado, marca Zara<i class="material-icons right">more_vert</i></span>
+            <a href="#!love"><i class="small material-icons teal-text text-lighten-2">favorite_border</i></a>
+            <a href="#!comment"><i class="small material-icons teal-text text-lighten-2">comment</i></a>
+            <a href="#!share"><i class="small material-icons teal-text text-lighten-2">share</i></a>
+            <div class="divider"></div>
+            <br>
+            <a href="#!user"><img class="circle small" src="../assets/images/user.png"></a>
+            <a href="#!nickname"><span class="teal-text name small-let text-lighten-2">@chocohoney</span></a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">S/35.00<i class="material-icons right">close</i></span>
+            <br>
+            <p>Lindo blazer con estampado floreado,ideal para el verano.<br>Talla:S<br>Material:Algodón, fresco y liviano.</p>
+            <br>
+            <br>
+            <a class="waves-effect waves-light btn">Comprar</a>
+            <br>
+            <br>
+            <a href="#!shop"><i class="small material-icons teal-text text-lighten-2">shopping_cart</i><span class="gray-text name small-let text-darken-4">Añadir al carrito</span></a>
+          </div>
+        </div>
+        <div class="card col s6">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="../assets/images/fig7.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Nuevo!Botas con hebillas Nastygal<i class="material-icons right">more_vert</i></span>
+            <a href="#!love"><i class="small material-icons teal-text text-lighten-2">favorite_border</i></a>
+            <a href="#!comment"><i class="small material-icons teal-text text-lighten-2">comment</i></a>
+            <a href="#!share"><i class="small material-icons teal-text text-lighten-2">share</i></a>
+            <div class="divider"></div>
+            <br>
+            <a href="#!user"><img class="circle small" src="../assets/images/user2.jpg"></a>
+            <a href="#!nickname"><span class="teal-text name small-let text-lighten-2">@lula44</span></a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">S/90.00<i class="material-icons right">close</i></span>
+            <br>
+            <p>Nuevo y con etiquetas.<br>Talla:38<br>Sin taco.</p>
+            <br>
+            <br>
+            <a class="waves-effect waves-light btn">Comprar</a>
+            <br>
+            <br>
+            <a href="#!shop"><i class="small material-icons teal-text text-lighten-2">shopping_cart</i><span class="gray-text name small-let text-darken-4">Añadir al carrito</span></a>
+          </div>
+        </div>
+        <div class="card col s6">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="../assets/images/fig8.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Oferta! Sandalias Volcom<i class="material-icons right">more_vert</i></span>
+            <a href="#!love"><i class="small material-icons teal-text text-lighten-2">favorite_border</i></a>
+            <a href="#!comment"><i class="small material-icons teal-text text-lighten-2">comment</i></a>
+            <a href="#!share"><i class="small material-icons teal-text text-lighten-2">share</i></a>
+            <div class="divider"></div>
+            <br>
+            <a href="#!user"><img class="circle small" src="../assets/images/user3.jpg"></a>
+            <a href="#!nickname"><span class="teal-text name small-let text-lighten-2">@misscriss</span></a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">S/35.00<i class="material-icons right">close</i></span>
+            <br>
+            <p>Estupenda condición.<br>Talla:37<br>Buen precio.</p>
+            <br>
+            <br>
+            <a class="waves-effect waves-light btn">Comprar</a>
+            <br>
+            <br>
+            <a href="#!shop"><i class="small material-icons teal-text text-lighten-2">shopping_cart</i><span class="gray-text name small-let text-darken-4">Añadir al carrito</span></a>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="progress">
+      <div class="indeterminate"></div>
+    </div>
+  </footer>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
