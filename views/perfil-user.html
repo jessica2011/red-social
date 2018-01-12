@@ -2,45 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Closet</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <title>Document</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>  
 </head>
 <body class="bg-perfil ">
+  
   <ul id="dropdown1" class="dropdown-content open">
+    <li><a href="home.html">Inicio</a></li>
+    <li><a href="#">Notificaciones</a></li>
+    <li><a href="#">Mis favoritos</a></li>
     <li><a href="../index.html">Log Out</a></li>
   </ul>
-  <nav class="bg-salmon">
+  <nav class="bg-aquamar">
     <div class="nav-wrapper">
-      <a href="news_feed.html" class="brand-logo center hide-on-med-and-down logo-2"><img src="../assets/images/logo_fondoblanco.png" alt=""></a>
+      <a href="home.html" class=" brand-logo center hide-on-small-only logo-2"><img src="../assets/images/logo2.png" alt=""></a>
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">settings</i></a>
       <ul class="right">
-        <li><a id="anade-outfits" href="#modal1" class="tooltipped modal-trigger" data-position="bottom" data-delay="50" data-tooltip="Añade tu outfits"><i class="material-icons">add_a_photo</i></a></li>
+        <li><a href="#modal1" class="tooltipped modal-trigger" data-position="bottom" data-delay="50" data-tooltip="Añade tu outfits"><i class="material-icons">add_a_photo</i></a></li>
         <li><a href="#"><i class="material-icons">search</i></a></li>
-        <li><a class="dropdown-button" href="#" data-activates="dropdown1">@pau123<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button name-user-js" href="#" data-activates="dropdown1"><i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
-        <li><a class="subheader center options">Opciones</a></li>
+      <ul id="slide-out" class="side-nav">
+        <li><a class="subheader center options">OPCIONES</a></li>
         <li><div class="divider"></div></li>
-        <li><a class="subheader">Perfil</a></li>
+        <li><a class="subheader">CUENTA</a></li>
         <li><div class="divider"></div></li>
         <li><a class="waves-effect">Editar Perfil</a></li>
         <li><a class="waves-effect">Cambiar Contraseña</a></li>
-        <li><a class="waves-effect">Mis Métodos de Pago</a></li>
         <li><div class="divider"></div></li>
-        <li><a class="subheader">Mi Closet</a></li>
+        <li><a class="subheader">AJUSTES</a></li>
         <li><div class="divider"></div></li>
-        <li><a class="waves-effect">Mis Compras</a></li>
-        <li><a class="waves-effect">Mi Monedero</a></li>
-        <li><a class="waves-effect">Mis Ventas</a></li>
+        <li><a class="waves-effect">Lenguaje</a></li>
         <li><a class="waves-effect">Notificaciones</a></li>
         <li><div class="divider"></div></li>
-        <li><a class="subheader">Acerca De</a></li>
+        <li><a class="subheader">ACERCA DE</a></li>
         <li><div class="divider"></div></li>
         <li><a class="waves-effect">Anuncios</a></li>
-        <li><a class="waves-effect">Invita a tus amigos y gana!</a></li>
-        <li><a class="waves-effect">Guía de Chic & Free</a></li>
+        <li><a class="waves-effect">Centro de ayuda</a></li>
         <li><a class="waves-effect">Más</a></li>
         <li><div class="divider"></div></li>
         <li><a class="waves-effect">Salir</a></li>
@@ -49,50 +50,40 @@
     </div>
   </nav>
   <div class="row">
-    <a href="news_feed.html" class="hide-on-large-only">
-      <img src="../assets/images/logo_fondoblanco.png" alt="logo" class="col s12 l4 offset-l4">
+    <a href="#" class="hide-on-large-only hide-on-med-and-up">
+      <img src="../assets/images/logo2.png" alt="logo" class="col s8 offset-s2">
     </a>
   </div>
 
-  <section class="container bg-image">
+  <section class="container">
     <div class="row">
-      <figure class="photo-perfil">
-        <img class="circle" src="../assets/images/user.png" alt="Foto Perfil">
-        <p id="nameUser" class="name-user center shaded">@pau123</p>
+      <figure class="photo-perfil photo-user-js">
+        <img src="../assets/images/user.png" alt="Foto Perfil">
       </figure>
+      <p class="name-user-js center">Paula Ramos A.</p>
     </div>
     <div class="row icon-container">
-      <div class="icon-preview col s2 offset-s1">
+      <div class="icon-preview col s3 offset-s1">
         <a href="#"><i class="material-icons  grey-text">queue</i><span>Seguir</span></a>
       </div>
-      <div class="icon-preview col s3">
-        <img class="img-icons" src="../assets/images/dress.png" alt="vestido"><span>Closet</span>
-      </div>
-      <div class="icon-preview col s3">
-        <i class="material-icons c-aquamar">stars</i><span>Top Seller</span>
+      <div class="icon-preview col s4">
+        <img class="img-icons" src="../assets/images/dress.png" alt="vestido"><span>Mis Outfits</span>
       </div>
       <div class="icon-preview col s3">
         <i class="material-icons c-aquamar">more_horiz</i><span>Más</span>
       </div>
-      <!-- <div class="icon-preview col s4">
-        <span>5</span>
-        <span>Seguidores</span>
-      </div>
-      <div class="icon-preview col s3">
-        <span>5</span>
-        <span>Siguiendo</span>
-      </div> -->
     </div>
   </section>
   <section id="box-posteo" class="container">
     <div class="row">
       <div class="card sticky-action col s12 l6 offset-l3  light-blue lighten-5">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="../assets/images/fig9.jpg">
+          <img class="activator" src="../assets/images/outfits1.jpg">
         </div>
         <div id="insert-title" class="card-action p-10">
           <h5>Outfits con estilo</h5>
           <p>Creado por <a href="#" class="create c-aquamar">paula.m.ramosr.14</a></p>
+          <p>Publicado el 4 de enero del 2018</p>
         </div>
         <div class="card-action p-10">  
           <span class="center-align f-size-10 col s4"><i class="material-icons pointer c-aquamar">favorite_border</i></span>
@@ -118,7 +109,7 @@
             <div class="row row1">
               <div class="input-field m-0">
                 <a href="#" class="prefix"><img src="../assets/images/user2.jpg" alt="user" class="photo-perfil-circule"></a> 
-                <p class="col s10 m11 right m-0 w-wrap p-10 white l10">Elegante!! Que talla es?</p>    
+                <p class="col s10 m11 right m-0 w-wrap p-10 white l10">Excelente combinación</p>    
               </div>
             </div>
           </div>
@@ -126,7 +117,7 @@
             <div class="row row1">
               <div class="input-field m-0">
                 <a href="#" class="prefix"><img src="../assets/images/user3.jpg" alt="user" class="photo-perfil-circule"></a> 
-                <p class="col s10 m11 right m-0 w-wrap p-10 white l10">Justo lo que buscaba, aceptas intercambios? :)</p>    
+                <p class="col s10 m11 right m-0 w-wrap p-10 white l10">Me encanta, me copiaré tu estilo :)</p>    
               </div>
             </div>
           </div>
@@ -139,16 +130,16 @@
     <div id="modal1" class="modal modal-fixed-footer">
       <div class="modal-content">
         <a href="#"><img src="../assets/images/user.png" alt="user" class="photo-perfil-circule"></a>
-        <span class="name">@pau123</span>
+        <span class="name">Paula Ramos</span>
         <form class="input-field m-0">
-          <input id="title-modal" type="text" class="validate right" placeholder="Escribe un titulo llamativo">  
-          <textarea id="textarea2" class="materialize-textarea  right" placeholder="Describe tu producto, tanto como puedas ;)"></textarea>     
+          <input id="title-modal" type="text" class="validate right" placeholder="Titulo">  
+          <textarea id="textarea2" class="materialize-textarea  right" placeholder="Escribe un comentario..."></textarea>     
         </form>
       </div>
       <div class="modal-footer">
         <form action="#">
           <div class="file-field input-field">
-            <a id="subir-photo" class="left c-aquamar">
+            <a class="left c-aquamar">
               <i class="material-icons camera-icons">camera_alt</i>
               <input type="file">
             </a>
@@ -157,19 +148,17 @@
           </div>
         </form>
         <div class="row">
-          <a href="#" id="btn-modal-publicar" class="modal-action bg-aquamar btn right col s12">Publica y libérate de lo que no necesitas :)</a>
+          <a href="#" id="btn-modal-publicar" class="modal-action bg-aquamar btn right col s12">Publicar</a>
         </div>
       </div>
     </div>
   </section>
   <footer class="bg-aquamar">
-    <p class="center m-0"> © 2018 Elaborado por JessicaMeza & ClaudiaZaCor</p>
+    <p class="center m-0"> © 2018 Elaborado por JessicaMeza & Claudia</p>
   </footer>
       
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script type="text/javascript" src="../js/perfil.js"></script>  
-  <script src="../js/app.js"></script>
+  <script type="text/javascript" src="../js/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+</head>
+<body>
+  <div class="row">
+    <div class="col l3 bg-fondo bg-img hide-on-med-and-down side-nav fixed">
+      <figure class="photo-perfil">
+        <a href="perfil-user.html" id="photo-user-js"></a>
+      </figure>
+      <p  id="nombre"></p>
+      <div>
+        <ul id="slide-out">
+          <li><a class="subheader center name-user-js"></a></li>
+          <li><div class="divider"></div></li>
+          <li><a class="subheader">CUENTA</a></li>
+          <li><div class="divider"></div></li>
+          <li><a class="waves-effect" href="perfil-user.html">Editar Perfil</a></li>
+          <li><a class="waves-effect">Cambiar Contraseña</a></li>
+          <li><div class="divider"></div></li>
+          <li><a class="subheader">AJUSTES</a></li>
+          <li><div class="divider"></div></li>
+          <li><a class="waves-effect">Lenguaje</a></li>
+          <li><a class="waves-effect">Notificaciones</a></li>
+          <li><div class="divider"></div></li>
+          <li><a class="subheader">ACERCA DE</a></li>
+          <li><div class="divider"></div></li>
+          <li><a class="waves-effect">Anuncios</a></li>
+          <li><a class="waves-effect">Centro de ayuda</a></li>
+          <li><a class="waves-effect">Más</a></li>
+          <li><div class="divider"></div></li>
+          <li><a class="waves-effect" href="../index.html">Salir</a></li>
+          <li><div class="divider"></div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col l9 p-0 s12 right">
+      <ul id="dropdown1" class="dropdown-content open">
+        <li><a href="perfil-user.html">Tu Perfil</a></li>
+        <li><a href="#">Notificaciones</a></li>
+        <li><a href="#">Mis favoritos</a></li>
+        <li><a class="signOff-js">Log Out</a></li>
+      </ul>
+      <nav class="bg-aquamar fixed-header">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center hide-on-med-and-down logo-2"><img src="../assets/images/logo2.png" alt="logo"></a>
+          <ul class="right">
+            <li><a id="btn-postear-js" href="#modal2" class="tooltipped modal-trigger" data-position="bottom" data-delay="50" data-tooltip="Añade tu outfits"><i class="material-icons">add_a_photo</i></a></li>
+            <li><a href="#"><i class="material-icons">search</i></a></li>
+            <li ><a class="dropdown-button name-user-js "href="#" data-activates="dropdown1">jess<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id='box-posteo-js' class="col s10 offset-s1">
+        <div class="card col s6">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="../assets/images/fig1.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Botines nuevos SM<i class="material-icons right">more_vert</i></span>
+            <a href="#"><i class="small material-icons teal-text text-lighten-2">favorite_border</i></a>
+            <a href="#"><i class="small material-icons teal-text text-lighten-2">comment</i></a>
+            <a href="#"><i class="small material-icons teal-text text-lighten-2">share</i></a>
+            <div class="divider"></div><br>
+            <a href="#"><img class="circle small" src="../assets/images/user2.jpg"></a>
+            <a href="#"><span class="teal-text name small-let text-lighten-2">@lula44</span></a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">S/100.00<i class="material-icons right">close</i></span><br>
+            <span>Color: Taupe<br>Size:37<br>Taco:5<br>Incluye caja y bolsa de regalo.</span><br><br>
+            <a class="waves-effect waves-light btn">Comprar</a><br><br>
+            <a href="#"><i class="small material-icons teal-text text-lighten-2">shopping_cart</i><span class="gray-text name small-let text-darken-4">Añadir al carrito</span></a>
+          </div>
+        </div>
+        <div class="card col s6">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="../assets/images/fig2.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Suéter de hilo F21<i class="material-icons right">more_vert</i></span>
+            <a href="#"><i class="small material-icons teal-text text-lighten-2">favorite_border</i></a>
+            <a href="#"><i class="small material-icons teal-text text-lighten-2">comment</i></a>
+            <a href="#"><i class="small material-icons teal-text text-lighten-2">share</i></a>
+            <div class="divider"></div><br>
+            <a href="#!user"><img class="circle small" src="../assets/images/user3.jpg"></a>
+            <a href="#!nickname"><span class="teal-text name small-let text-lighten-2">@misscriss</span></a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">S/30.00<i class="material-icons right">close</i></span><br>
+            <span>Suéter en excelente condición, ya que solo lo usé una vez.<br>Muy suave y cómodo.<br>Talla:L<br>Look:Relajado</span><br><br>
+            <a class="waves-effect waves-light btn">Comprar</a><br><br>
+            <a href="#"><i class="small material-icons teal-text text-lighten-2">shopping_cart</i><span class="gray-text name small-let text-darken-4">Añadir al carrito</span></a>
+          </div>
+        </div> 
+        <div class="card col s6">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="../assets/images/fig7.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Nuevo!Botas con hebillas Nastygal<i class="material-icons right">more_vert</i></span>
+            <a href="#"><i class="small material-icons teal-text text-lighten-2">favorite_border</i></a>
+            <a href="#"><i class="small material-icons teal-text text-lighten-2">comment</i></a>
+            <a href="#"><i class="small material-icons teal-text text-lighten-2">share</i></a>
+            <div class="divider"></div>
+            <br>
+            <a href="#"><img class="circle small" src="../assets/images/user2.jpg"></a>
+            <a href="#"><span class="teal-text name small-let text-lighten-2">@lula44</span></a>
+          </div>
+          <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">S/90.00<i class="material-icons right">close</i></span><br>
+          <p>Nuevo y con etiquetas.<br>Talla:38<br>Sin taco.</p><br><br>
+          <a class="waves-effect waves-light btn">Comprar</a><br><br>
+          <a href="#"><i class="small material-icons teal-text text-lighten-2">shopping_cart</i><span class="gray-text name small-let text-darken-4">Añadir al carrito</span></a>
+          </div>
+        </div>
+        <div class="card col s6">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="../assets/images/fig8.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Oferta! Sandalias Volcom<i class="material-icons right">more_vert</i></span>
+            <a href="#"><i class="small material-icons teal-text text-lighten-2">favorite_border</i></a>
+            <a href="#"><i class="small material-icons teal-text text-lighten-2">comment</i></a>
+            <a href="#"><i class="small material-icons teal-text text-lighten-2">share</i></a>
+            <div class="divider"></div><br>
+            <a href="#"><img class="circle small" src="../assets/images/user3.jpg"></a>
+            <a href="#"><span class="teal-text name small-let text-lighten-2">@misscriss</span></a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">S/35.00<i class="material-icons right">close</i></span><br>
+            <p>Estupenda condición.<br>Talla:37<br>Buen precio.</p><br><br>
+            <a class="waves-effect waves-light btn">Comprar</a><br><br>
+            <a href="#"><i class="small material-icons teal-text text-lighten-2">shopping_cart</i><span class="gray-text name small-let text-darken-4">Añadir al carrito</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col l3 offset-l6">
+        <div class="progress">
+          <div class="indeterminate"></div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+    <!-- Modal para añadir publicación -->
+    <section>
+      <div id="modal2" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <a href="#"><img src="../assets/images/user.png" alt="user" class="photo-perfil-circule"></a>
+          <span class="name">Paula Ramos</span>
+          <form class="input-field m-0">
+            <input id="title-modal-js" type="text" class="validate right" placeholder="Titulo">  
+            <textarea id="textarea3-js" class="materialize-textarea  right" placeholder="Escribe un comentario..."></textarea>     
+          </form>
+        </div>
+        <div class="modal-footer">
+          <form action="#">
+            <div class="file-field input-field">
+              <a id='inserta-img-js' class="left c-aquamar">
+                <i class="material-icons camera-icons">camera_alt</i>
+                <input type="file">
+              </a>
+              <input type='file'/>
+              <figure id="img-file-js">
+                <img  src="../assets/images/outfits2.jpg" alt="img"/>
+              </figure>
+            </div>
+          </form>
+          <div class="row">
+            <a href="#" id="btn-modal-publicar-js" class="modal-action bg-aquamar btn right col s12">Publicar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script type="text/javascript" src="../js/app.js"></script>
+</body>
+</html>

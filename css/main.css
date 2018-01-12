@@ -1,8 +1,5 @@
 * {
   font-family: 'Raleway', sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 .container-flex-column {
@@ -33,16 +30,31 @@
 }
 
 /*Vista Index*/
-
-.bg-gif {
-  background-image: url('../assets/images/gifs-animados-moda-479273.gif');
+.bg-img {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 81vh;
-  width: 100vw;
-  bottom: 2px;
-  position: absolute;
+  height: 100vh;
+}
+
+.bg-fondo {
+  background-image: url('../assets/images/fondo.jpg');  
+}
+
+.bg-large {
+  background-image: url('../assets/images/fondo-chic.gif'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.centrado {
+  margin: 30% 0;
+}
+
+
+.bg-gif {
+  background-image: url('../assets/images/gifs-animados-moda-479273.gif');
 }
 .row-bot {
   margin-top: 90%;
@@ -50,18 +62,10 @@
 }
 
 .mainbot {
-  padding: 5px 5px 20px 5px;
-  display: inline-block;
-  width: 30vw;
   background: linear-gradient(rgb(236, 118, 125) 45%, rgb(255,168,52));
-  border: 3px solid salmon;
+  border: 1px solid salmon;
   color:white;
   border-radius: 15px;
-  display: inline-block;
-  margin: 2rem;
-  font-size: 10px;
-  font-weight: bolder;
-  letter-spacing: 2px;
 }
 
 .mainbot:hover {
@@ -279,15 +283,6 @@ footer p{
   color: #4267b2;
 }
 
-.or {
-  position: relative;
-  width: 55px;
-  left:41%;
-  padding: 5px 20px;
-  background-color: white;
-  bottom: 15px;
-}
-
 /*Vista News-feed*/
 
 .logo-rosa {
@@ -312,5 +307,6 @@ footer p{
   position: relative;
   bottom: 8px;
 }
+
 
  
