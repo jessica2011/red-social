@@ -26,7 +26,7 @@ $('.btnGoogle-js').click(function() {
       $('.photo-user-js').append('<img class="circle" src=\'' + result.user.photoURL + '\'/>');
       $('.name-user-js').append('<span>' + result.user.displayName + '</span>');
       
-      window.location.href = '../views/home.html';
+      window.location.href = '../views/home/index.html';
       var token = result.credential.accessToken;
       var user = result.user;
     });
@@ -71,7 +71,7 @@ $('#btn-signUp-js').click(function(event) {
   firebase.auth().createUserWithEmailAndPassword($valEmail, $valPassword)
     .then(function(result) {
     // alert('Autentificación correcta');
-      window.location.href = '../index.html';
+      window.location.href = '../../index.html';
     // verifyAccount();
     })
     .catch(function(error) {
@@ -90,7 +90,7 @@ $('#btn-login-js').click(function() {
   firebase.auth().signInWithEmailAndPassword($valEmail2, $valPassword2)
     .then(function(result) {
       // alert('Autentificación correcta');
-      window.location.href = '../views/home.html';
+      window.location.href = '../views/home/index.html';
     })
     .catch(function(error) {
       var errorCode = error.code;
@@ -140,7 +140,7 @@ $('.signOff-js').click(function() {
   firebase.auth().signOut()
     .then(function() {
       console.log('saliendo..');
-      window.location.href = '../index.html';
+      window.location.href = '../../index.html';
     }, function(error) {
       console.error('Sign Out Error', error);
     });
