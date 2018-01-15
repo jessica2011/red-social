@@ -1,0 +1,361 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+.m-post {
+  margin: 50px 0px 0px ;
+  padding: 20px
+}
+
+.m-file {
+  margin: 0px 0px 10px;
+  padding: 0px 20px 10px;
+}
+
+/* estilos para la vista home */
+.open {
+  margin-top: 62px;
+}
+
+.m-msn {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.m-bottom {
+  margin-bottom: 20px;
+}
+
+.m-left-15 {
+  margin-left: 15px;
+}
+
+.sd {
+  z-index: 2000;
+  position: fixed;
+}
+
+.p-nav {
+  padding-top: 70px ;
+  padding-bottom: 0px;
+}
+
+.p-0-0 {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.container-flex-column {
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+}
+
+.container-flex-column2 {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+
+.h-20vh {
+  height: 20vh;
+}
+
+.h-80vh {
+  height: 100vh;
+  bottom: 50vh;
+  margin-top: 20%;
+}
+
+.p-0 {
+  padding: 0px !important;
+}
+
+/*Vista Index*/
+.bg-img {
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.bg-fondo {
+  background-image: url('../assets/images/fondo.jpg');  
+}
+
+.bg-large {
+  background-image: url('../assets/images/fondo-chic.gif'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.centrado {
+  margin: 30% 0;
+}
+
+
+.bg-gif {
+  background-image: url('../assets/images/gifs-animados-moda-479273.gif');
+}
+.row-bot {
+  margin-top: 90%;
+  margin-left: 3%;
+}
+
+.mainbot {
+  background: linear-gradient(rgb(236, 118, 125) 45%, rgb(255,168,52));
+  border: 1px solid salmon;
+  color:white;
+  border-radius: 15px;
+}
+
+.mainbot:hover {
+  background: transparent;
+  color: black;
+}
+
+
+.vh-100 {
+  height: 100vh;
+}
+
+.h-100p {
+  height: 100%;
+}
+.h-50p {
+  height: 25vh;
+  width: 100%
+}
+
+.side-nav li>a {
+  height: 30px;
+  line-height: 30px;
+}
+
+.side-nav .subheader {
+  line-height: 30px;
+}
+
+.p-24 {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 10px;
+}
+
+.logo-2 {
+  height: 120px;
+  width: 180px;
+  margin-left: 80px;
+}
+
+.options {
+  color: rgba(0,0,0,0.87) !important;
+  margin: 10px auto;
+}
+ 
+/*Vistas Sign up y Log In*/
+.bg-aquamar {
+  background-color: #65bba0;
+}
+
+.bg-whitesmoke{
+  background-color: #f7f7f7;
+}
+
+.icon-container i {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.icon-container span {
+  display: block;
+}
+
+.icon-container .icon-preview {
+  height: 70px;
+  text-align: center;
+}
+
+/*Vista Perfil User*/
+
+.bg-image {
+  background-image: url('../assets/images/fondo.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 87%;
+  padding: 5px 0;
+}
+
+.photo-perfil {
+  display:block;
+  margin:10px auto;
+  width: 120px;
+  height: 120px;
+  padding: 5px;
+}
+
+.photo-select {
+  width: 80px;
+  height: 80px;
+}
+
+.photo-perfil-circule {
+  border-radius: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.img-icons {
+  width: 3em;
+  height: 3em;
+  margin-bottom: 5px;
+}
+
+.img-file {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+
+}
+
+.bg-salmon {
+  color: lightcoral;
+}
+
+.c-aquamar {
+  color: #65bba0;
+}
+
+/* .active {
+  color: #75e6c2 !important;
+} */
+
+.create {
+  text-transform: lowercase !important;
+  color: #039be5 !important;
+}
+
+.create:hover {
+  color: #055980 !important;   
+}
+
+.pointer {
+  cursor: pointer
+}
+
+.f-size-10 {
+  font-size: 10px;
+}
+
+.btn-pub {
+  letter-spacing: .1px;
+  padding: 0 5px;
+  margin: 5px 0 0 10px;
+}
+
+.line {
+  background-color: rgb(196, 196, 196);
+  height: 1px;
+}
+
+.modal-footer {
+  padding: 4px 30px !important;
+}
+
+.row1 {
+  margin-bottom: 0px;
+}
+
+.p-10 {
+  padding: 10px !important;
+}
+
+.m-0 {
+  margin: 0  !important;
+}
+
+.w-wrap {
+  word-wrap: break-word;
+}
+
+.sticky-action {
+  padding-bottom: 20px !important;
+}
+
+.name-user {
+  color:white;
+  position: relative;
+  bottom: 100px;
+  border-radius: 10px; 
+  width: 120%;
+  padding: 12px;
+  right: 20px;
+  background-color: rgba(4,8,2,0.4);
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.name {
+  position: relative;
+  bottom: 20px;
+}
+
+#file-img{
+  width: 5vw;
+  padding-left: 10px;
+}
+
+.camera-icons {
+  font-size: 50px;
+}
+footer p{
+  padding: 20px 0;
+}
+
+.font-size-20 {
+  font-size: 40px !important;
+}
+
+.c-gainsboro {
+  color: #e6e6e6;
+}
+
+.bg-linen {
+  background-color: #ecebeb;
+}
+
+.c-fb {
+  color: #4267b2;
+}
+
+/*Vista News-feed*/
+
+.logo-rosa {
+  height: 49px;
+  width: 53px;
+  margin: 0%;
+  padding: 0%; 
+} 
+
+.card .card-title {
+  font-size: 15px;
+  line-height: 15px !important;
+}
+
+.small {
+  height: 2rem;
+  width: 2rem;
+}
+
+.small-let{
+  font-size: 11px;
+  position: relative;
+  bottom: 8px;
+}
+
+
+ 

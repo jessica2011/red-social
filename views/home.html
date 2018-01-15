@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+</head>
+<body>
+  <header>
+    <div class="row">
+      <ul id="dropdown1" class="dropdown-content open">
+        <li><a href="perfil-user.html">Tu Perfil</a></li>
+        <li><a href="#">Notificaciones</a></li>
+        <li><a href="#">Mis favoritos</a></li>
+        <li><a class="signOff-js">Cerrar sesión</a></li>
+      </ul>
+      <nav class="bg-aquamar sd">
+          <a href="#" class="brand-logo hide-on-med-and-down logo-2"><img src="../assets/images/logo2.png" alt="logo"></a>
+          <ul class="right">
+            <li><a id="btn-postear-js" href="#modal2" class="tooltipped modal-trigger" data-position="bottom" data-delay="50" data-tooltip="Añade tu outfits"><i class="material-icons">add_a_photo</i></a></li>
+            <li><a href="#"><i class="material-icons">search</i></a></li>
+            <li ><a class="dropdown-button name-user-js" href="#" data-activates="dropdown1"><i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="row">
+    <section class="col l3">
+      <div class="bg-fondo bg-img hide-on-med-and-down side-nav fixed p-nav ">
+        <figure class="photo-perfil">
+          <a href="perfil-user.html" class="photo-user-js"></a>
+        </figure>
+        <h5 class="center name-user-js"></h5>
+        <div>
+          <ul>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">CUENTA</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="waves-effect" href="perfil-user.html">Editar Perfil</a></li>
+            <li><a class="waves-effect">Cambiar Contraseña</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">AJUSTES</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="waves-effect">Lenguaje</a></li>
+            <li><a class="waves-effect">Notificaciones</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">ACERCA DE</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="waves-effect">Anuncios</a></li>
+            <li><a class="waves-effect">Centro de ayuda</a></li>
+            <li><a class="waves-effect">Más</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="waves-effect" href="../index.html">Salir</a></li>
+            <li><div class="divider"></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="col l6">
+      <div class="row bg-linen m-post  ">
+        <div class="card-action">
+          <form class="input-field">
+            <a class="prefix photo-user-js" href="#"></a> 
+            <a id="btn-comment-post-home" class="btn bg-aquamar right disabled">Publicar</a>
+            <textarea id="textarea1-post-home" class="materialize-textarea col s7 m9 l8 right" placeholder="Escribe un comentario..."></textarea>     
+          </form>        
+        </div>
+      </div>
+      <form action="#" class="bg-linen ">
+        <div class="file-field input-field m-top-0 m-file">
+          <div class="btn">
+            <span>Imagen</span>
+            <input type="file">
+          </div>
+          <input type='file' id="aa" />
+          <img id="file-img" src="http://via.placeholder.com/200/ecebeb/ecebeb" alt>
+        </div>
+      </form>
+      <div class="row">
+        <div class='col s10 offset-s1'>
+          <div id="box-posteo" class="m-bottom"   >
+            <div class="card-action light-blue lighten-5 p-24">
+              <div class="row m-0">
+                <form class="input-field">
+                  <a href="#" class="prefix photo-user-js"></a> 
+                  <h5 class="col s7 m9 l11 offset-l1 name-user-js"></h5>     
+                </form>
+                <p>Comentario.........</p>
+              </div>
+            </div>
+            <div class="card sticky-action light-blue lighten-5 m-0">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="../assets/images/fig9.jpg">
+              </div>
+              <div class="card-action">  
+                <span class="right activator m-left-15"><i class="material-icons c-aquamar pointer"> more_vert</i></span>
+                <span class="right m-left-15"><i class="material-icons c-aquamar pointer">comment</i></span>
+                <span class="right m-left-15"><i class="material-icons c-aquamar pointer">favorite_border</i></span><br>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">S/100.00<i class="material-icons right">close</i></span><br>
+                <span>Color: Taupe<br>Size:37<br>Taco:5<br>Incluye caja y bolsa de regalo.</span><br><br>
+                <a class="waves-effect waves-light btn">Comprar</a><br><br>
+                <a href="#"><i class="small material-icons teal-text text-lighten-2">shopping_cart</i><span class="gray-text name small-let text-darken-4">Añadir al carrito</span></a>
+              </div>
+              <div class="card-action">
+                <div class="row m-msn">
+                  <form class="input-field m-msn">
+                    <a href="#" class="prefix photo-user-js"></a> 
+                    <a id="btn-comment" class="btn bg-aquamar right disabled m-left-15">Publicar</a>
+                    <textarea id="textarea1" class="materialize-textarea col s7 m9 l7 right" placeholder="Escribe un comentario..."></textarea>     
+                  </form>
+                </div>
+              </div>
+            <div id="box-content" class="comentarios m-msn"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="col l3">
+      <div class="row">
+
+      </div>
+    </section>
+  </div>
+  
+
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script type="text/javascript" src="../js/app.js"></script>
+</body>
+</html>
