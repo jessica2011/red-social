@@ -4,101 +4,6 @@ $(document).ready(function() {
   $('.modal').modal();
 });
 
-// Enlazar los link de signUp y login
-$(document).ready(function() {
-  $('.enlace-signUp-js').click(function() {
-    $('#initial').addClass('hide');
-    $('#signUp').removeClass('hide');
-  });
-  $('.enlace-login-js').click(function() {
-    $('#initial').addClass('hide');
-    $('#login').removeClass('hide');
-  });
-  $('.a-login-js').click(function() {
-    $('#signUp').addClass('hide');
-    $('#login').removeClass('hide');
-  });
-  $('.a-signUp-js').click(function() {
-    $('#login').addClass('hide');
-    $('#signUp').removeClass('hide');
-  });
-});
-
-// comentar el perfil de usuario
-
-// perfil del user
-
-var $btnPublicar = $('#btn-comment');
-var $txArea = $('#textarea1');
-var $box = $('#box-content');
-
-/* Activar boton publicar */
-$txArea.keyup(function() {
-  var longTxArea = $txArea.val().length;
-  longTxArea >= 1 ? activeButton() : desactiveButton();
-});
-// Aqui indicar que se puede implementar la función como variable
-function activeButton() {
-  $btnPublicar.removeClass('disabled');  
-}
-function desactiveButton() {
-  $btnPublicar.addClass('disabled');
-}
-
-$btnPublicar.on('click', function() {
-  if ($txArea.val()) {
-    $box.prepend('<div class="card-action p-10"><div class="row row1"><div id ="comentario" class="input-field m-0"><a class = "prefix"><img src="../assets/images/user.png" class="photo-perfil-circule"></a></div></div></div>');
-    var $txt = $('#comentario');
-    var $parrafo = $('<p/>', { 'class': 'col s10 m11 right m-0 w-wrap p-10 white l10' });
-    $parrafo.text($txArea.val());
-    $txt.prepend($parrafo);
-    $txArea.val('');
-    $txArea.focus();
-  }
-});
-
-// Cargando nuevo post con foto del dispositivo
-$('#btn-modal-publicar').click(function() {
-  var photo = $('#img-file').attr('src');
-  var textPost = $('#textarea2').val();
-  $('#box-posteo').prepend(`
-  <section id="box-posteo" class="container">
-  <div class="row">
-    <div class="card sticky-action col s12 l6 offset-l3  light-blue lighten-5">
-      <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="../assets/images/outfits1.jpg"></div>
-      <div id="insert-title" class="card-action p-10">
-        <h5>Outfits con estilo</h5>
-        <p>Creado por <a href="#" class="create c-aquamar">paula.m.ramosr.14</a></p>
-      </div>
-      <div class="card-action p-10">  
-        <span class="center-align f-size-10 col s4"><i class="material-icons pointer c-aquamar">favorite_border</i></span>
-        <span class="center-align f-size-10 col s4"><i class="material-icons pointer c-aquamar">comment</i></span>
-        <span class="center-align f-size-10 col s4 activator"><i class="material-icons pointer c-aquamar"> more_vert</i></span>
-        <br>
-      </div>
-      <div class="card-reveal" id="insert-comment">
-        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-        <div id="textoPublicado"><div>
-      </div>
-      <div class="card-action p-10">
-        <div class="row row1">
-          <form class="input-field">
-            <a href="#" class="prefix" id="photo">photo</a> 
-            <a id="btn-comment" class="btn btn-pub bg-aquamar right disabled">Publicar</a>
-            <textarea id="textarea1" class="materialize-textarea col s7 m9 l7 right" placeholder="Escribe un comentario..."></textarea>     
-          </form>
-        </div>  
-      </div>
-      <div id="box-content" class="comentarios">
-      </div>
-    </div>
-  </div>
-</section>`);
-});
-
-// modal2---> postear 
-
-
 // Initialize Firebase
 var config = {
   apiKey: 'AIzaSyCBWu6u5irD8qmyjD6vmz8hiUSvzSHCRqs',
@@ -118,7 +23,9 @@ $('.btnGoogle-js').click(function() {
     .then(function(result) {
       console.log(result.user);// gg
       saveData(result.user);
-      $('#photo-user-js').append('<img class="circle" src=\'' + result.user.photoURL + '\'/>');
+      $('.photo-user-js').append('<img class="circle" src=\'' + result.user.photoURL + '\'/>');
+      $('.name-user-js').append('<span>' + result.user.displayName + '</span>');
+      
       window.location.href = '../views/home.html';
       var token = result.credential.accessToken;
       var user = result.user;
@@ -135,7 +42,7 @@ function saveData(user) {
     photo: user.photoURL
   };
   firebase.database().ref('informationUser/' + user.uid)
-    .push(usuario);
+    .set(usuario);
 }
 
 // escribir en la base de datos
@@ -152,7 +59,8 @@ function saveData(user) {
 firebase.database().ref('informationUser')
   .on('child_added', function(s) {
     var user = s.val();
-    $('#photo-user-js').append('<img class="circle" src=\'' + user.foto + '\'/>');
+    $('.photo-user-js').append('<img class="circle" src=\'' + user.photo + '\'/>');
+    $('.name-user-js').append('<span>' + user.name + '</span>');  
   });
 
 // Registro de usuarios (signUp)
@@ -163,7 +71,7 @@ $('#btn-signUp-js').click(function(event) {
   firebase.auth().createUserWithEmailAndPassword($valEmail, $valPassword)
     .then(function(result) {
     // alert('Autentificación correcta');
-      window.location.href = '../views/home.html';
+      window.location.href = '../index.html';
     // verifyAccount();
     })
     .catch(function(error) {
@@ -233,9 +141,8 @@ $('.signOff-js').click(function() {
     .then(function() {
       console.log('saliendo..');
       window.location.href = '../index.html';
-    })
-    .catch(function(error) {
-      console.log(error);
+    }, function(error) {
+      console.error('Sign Out Error', error);
     });
 }); 
 
@@ -248,12 +155,128 @@ function verifyAccount() {
   }).catch(function(error) {
     console.log(error);
   });
-}
+};
 
-// locando nombre de usurio segun su correo 
+// Enlazar los link de signUp y login
+$(document).ready(function() {
+  $('.enlace-signUp-js').click(function() {
+    $('#initial').addClass('hide');
+    $('#signUp').removeClass('hide');
+  });
+  $('.enlace-login-js').click(function() {
+    $('#initial').addClass('hide');
+    $('#login').removeClass('hide');
+  });
+  $('.a-login-js').click(function() {
+    $('#signUp').addClass('hide');
+    $('#login').removeClass('hide');
+  });
+  $('.a-signUp-js').click(function() {
+    $('#login').addClass('hide');
+    $('#signUp').removeClass('hide');
+  });
+});
 
-// function nameUser(user) {
-//   $('.name-user-js').innerHtml = `${user.email}`;
-// }
 
+// perfil del user
+$(document).ready(function() {
+  var $btnPublicar = $('#btn-comment');
+  var $txArea = $('#textarea1');
+  var $box = $('#box-content');
 
+  /* Activar boton publicar */
+  $txArea.keyup(function() {
+    var longTxArea = $txArea.val().length;
+    longTxArea >= 1 ? activeButton() : desactiveButton();
+  });
+  // Aqui indicar que se puede implementar la función como variable
+  function activeButton() {
+    $btnPublicar.removeClass('disabled');  
+  }
+  function desactiveButton() {
+    $btnPublicar.addClass('disabled');
+  }
+
+  $btnPublicar.on('click', function() {
+    if ($txArea.val()) {
+      $box.prepend('<div class="card-action p-0-0"><div class="row"><div id ="comentario" class="input-field"><a class = "prefix photo-user-js"></a></div></div></div>');
+      var $txt = $('#comentario');
+      var $parrafo = $('<p/>', { 'class': 'col s10 m11 right m-0 w-wrap p-10 white l11 m-msn ' });
+      $parrafo.text($txArea.val());
+      $txt.prepend($parrafo);
+      $txArea.val('');
+      $txArea.focus();
+    }
+  });
+
+  // Cargando nuevo post con foto del dispositivo
+  $('#aa').on('change', function() {
+    var input = this;
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function(event) {
+        $('#file-img').attr('src', event.target.result);
+      };
+      reader.readAsDataURL(input.files[0]);
+    }
+  });
+
+  $('#textarea1-post-home').keyup(function() {
+    var longTxArea2 = $('#textarea1-post-home').val().length;
+    if (longTxArea2 >= 1) { // validar q hay imagen
+      activeButton1(); 
+    } else desactiveButton1();
+  });
+
+  function activeButton1() {
+    $('#btn-comment-post-home').removeClass('disabled');  
+  }
+  function desactiveButton1() {
+    $('#btn-comment-post-home').addClass('disabled');
+  }
+
+  $('#btn-comment-post-home').click(function() {
+    var photo = $('#file-img').attr('src');
+    var textPost = $('#textarea1-post-home').val();
+    $('#textarea1-post-home').val('');
+    $('#file-img').attr('src', 'http://via.placeholder.com/200/ecebeb/ecebeb');
+    
+
+    $('#box-posteo').prepend(
+      '<div id=\'box-posteo\' class=\'m-bottom\'>' +
+      '<div class=\'card-action light-blue lighten-5 p-24\'>' +
+        '<div class=\'row m-0\'>' +
+          '<form class=\'input-field\'>' +
+            '<a href=\'#\' class=\'prefix photo-user-js\'>' + '</a> ' +
+            '<h5 class=\'col s7 m9 l11 offset-l1\'>nombre del usuario</h5>' +    
+          '</form>' +
+          '<p>' + textPost + '</p>' +
+        '</div>' +
+      '</div>' +
+      '<div class=\'card sticky-action light-blue lighten-5 m-0\'>' +
+        '<div class=\'card-image waves-effect waves-block waves-light\'>' + '<img class=\'activator\' src =\' ' + photo + '\' alt =\'...\' />' +
+        '</div>' +
+        '<div class=\'card-action\'>' +
+          '<span class=\'right activator m-left-15\'><i class=\'material-icons c-aquamar pointer\'> more_vert</i></span>' +
+          '<span class=\'right m-left-15\'><i class=\'material-icons c-aquamar pointer\'>comment</i></span>' +
+          '<span class=\'right m-left-15\'><i class=\'material-icons c-aquamar pointer\'>favorite_border</i></span><br>' +
+        '</div>' +
+        '<div class=\'card-reveal\'>' +
+          '<span class=\'card-title grey-text text-darken-4\'>' + 'S/100.00' + '<i class=\'material-icons right\'>close</i>' + '</span>' + '<br>' +
+          '<span>' + 'Color: Taupe' + '<br>' + 'Size:37' + '<br>' + 'Taco:5' + '<br>' + 'Incluye caja y bolsa de regalo.' + '</span>' + '<br><br>' +
+          '<a class=\'waves-effect waves-light btn\'>Comprar</a><br><br>' +
+          '<a href=\'#\'><i class=\'small material-icons teal-text text-lighten-2\'>shopping_cart</i><span class=\'gray-text name small-let text-darken-4\'>Añadir al carrito</span></a>' +
+        '</div>' +
+        '<div class=\'card-action\'>' +
+          '<div class=\'row m-msn\'>' +
+            '<form class=\'input-field m-msn\'>' +
+              '<a href=\'#\' class=\'prefix photo-user-js\'>' + '</a>' +
+              '<a id=\'btn-comment\' class=\'btn bg-aquamar right disabled m-left-15\'>Publicar</a>' +
+              '<textarea id=\'textarea1\' class=\'materialize-textarea col s7 m9 l7 right\' placeholder=\'Escribe un comentario...\'></textarea>' +      
+            '</form>' +
+          '</div>' +
+        '</div>' +
+      '<div id=\'box-content\' class=\'comentarios m-msn\'></div>' +
+    '</div>');
+  });
+});

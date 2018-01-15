@@ -1,6 +1,48 @@
 * {
   font-family: 'Raleway', sans-serif;
 }
+.m-post {
+  margin: 50px 0px 0px ;
+  padding: 20px
+}
+
+.m-file {
+  margin: 0px 0px 10px;
+  padding: 0px 20px 10px;
+}
+
+/* estilos para la vista home */
+.open {
+  margin-top: 62px;
+}
+
+.m-msn {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.m-bottom {
+  margin-bottom: 20px;
+}
+
+.m-left-15 {
+  margin-left: 15px;
+}
+
+.sd {
+  z-index: 2000;
+  position: fixed;
+}
+
+.p-nav {
+  padding-top: 70px ;
+  padding-bottom: 0px;
+}
+
+.p-0-0 {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
 
 .container-flex-column {
   display: flex;
@@ -73,13 +115,6 @@
   color: black;
 }
 
-.open {
-  margin-top: 56px;
-}
-
-.side-nav .divider {
-  margin:0;
-}
 
 .vh-100 {
   height: 100vh;
@@ -102,9 +137,16 @@
   line-height: 30px;
 }
 
+.p-24 {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 10px;
+}
+
 .logo-2 {
   height: 120px;
   width: 180px;
+  margin-left: 80px;
 }
 
 .options {
@@ -149,8 +191,8 @@
 .photo-perfil {
   display:block;
   margin:10px auto;
-  width: 220px;
-  height: 220px;
+  width: 120px;
+  height: 120px;
   padding: 5px;
 }
 
@@ -160,10 +202,7 @@
 }
 
 .photo-perfil-circule {
-  margin:5px;
   border-radius: 100%;
-  width: 36px;
-  height: 36px;
 }
 
 img {
@@ -176,6 +215,13 @@ img {
   margin-bottom: 5px;
 }
 
+.img-file {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+
+}
+
 .bg-salmon {
   color: lightcoral;
 }
@@ -184,9 +230,9 @@ img {
   color: #65bba0;
 }
 
-.active {
+/* .active {
   color: #75e6c2 !important;
-}
+} */
 
 .create {
   text-transform: lowercase !important;
@@ -258,10 +304,9 @@ img {
   bottom: 20px;
 }
 
-#img-file{
-  width: 70px;
-  height: 70px;
-  margin-left: 10px;
+#file-img{
+  width: 5vw;
+  padding-left: 10px;
 }
 
 .camera-icons {
@@ -277,6 +322,10 @@ footer p{
 
 .c-gainsboro {
   color: #e6e6e6;
+}
+
+.bg-linen {
+  background-color: #ecebeb;
 }
 
 .c-fb {

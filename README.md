@@ -1,4 +1,4 @@
-# Reto Final : Creacion de una Red Social
+# Reto Final : Creacion de una Red Social
 
     Un emprendedor muy visionario nos ha encargado la creacion de una Red Social,a nuestro libre albedrio, pero asegurandonos que sera exitosa.
 
@@ -36,64 +36,64 @@
 
     Crear una red social en la cual se pueda vender, comprar e intercambiar ropa que se encuentre en buen estado, de esta forma liberandote de espacio en el closet y de ropa que ya no usas, fomentando tambien el consumo responsable.
 
-**4.Sketch:**
+**4. Sketch:**
 
-**Fecha:** 07 de enero
+    **Fecha:** 07 de enero
 
-Primer bosquejo de la aplicacion para version movil.
+    Primer bosquejo de la aplicacion para version movil.
 
-![Sketch](assets/docs/sketch.jpg)
+    ![Sketch](assets/docs/sketch.jpg)
 
 **5.Maquetacion en HTML 5:**
 
-**Fecha:** 08 - 10 de enero
+    **Fecha:** 08 - 10 de enero
 
-Empezamos a maquetar las vistas que en total fueron 5, entre ellas el index, la vista de Iniciar Sesion, Registrarse y para estas dos ultimas vistas pudimos lograr el registro con Google.
-También creamos una vista de actualizacion de noticias (News Feed) y la vista para el Perfil del Usuario.
+    Empezamos a maquetar las vistas que en total fueron 5, entre ellas el index, la vista de Iniciar Sesion, Registrarse y para estas dos ultimas vistas pudimos lograr el registro con Google.
+    También creamos una vista de actualizacion de noticias (News Feed) y la vista para el Perfil del Usuario.
 
- Vista Index:
-![Index](assets/docs/splash.png)
+    Vista Index:
+    ![Index](assets/docs/splash.png)
 
-Vista Log In:
-![Log In](assets/docs/login.png)
+    Vista Log In:
+    ![Log In](assets/docs/login.png)
 
-Vista Sign Up:
-![Sign Up](assets/docs/sign.png)
+    Vista Sign Up:
+    ![Sign Up](assets/docs/sign.png)
 
-Vista News Feed:
-![News Feed](assets/docs/principal.png)
+    Vista News Feed:
+    ![News Feed](assets/docs/principal.png)
 
-Vista User Profile:
-![Perfil](assets/docs/perfil.png)
-![OpcionesUser](assets/docs/opcionesUser.PNG)
+    Vista User Profile:
+    ![Perfil](assets/docs/perfil.png)
+    ![OpcionesUser](assets/docs/opcionesUser.PNG)
     
 
-**6.Diseño con "Materialize":**
+**6. Diseño con "Materialize":**
 
-**Fecha:** 08 - 10 de enero
+    **Fecha:** 08 - 10 de enero
 
-Utilizamos Materialize debido a su simplicidad y diseño. Usamos una paleta de colores pasteles.
+    Utilizamos Materialize debido a su simplicidad y diseño. Usamos una paleta de colores pasteles.
 
 **7. Agregando funcionalidades con jQuery:**
 
-**Fecha:** 09-10 de enero
+    **Fecha:** 09-10 de enero
 
-Usamos jQuery para el modal para publicar las ofertas de ropa y otro modal que permite contactarse con la vendedora.
+    Usamos jQuery para el modal para publicar las ofertas de ropa y otro modal que permite contactarse con la vendedora.
 
-![Mensaje](assets/docs/message.PNG)
-![Modal](assets/docs/modal1.PNG)
+    ![Mensaje](assets/docs/message.PNG)
+    ![Modal](assets/docs/modal1.PNG)
 
-Usamos Firebase para autenticar la contraseña con Gmail.
+    Usamos Firebase para autenticar la contraseña con Gmail.
     
-![Sketch](assets/docs/login.png)
+    ![Sketch](assets/docs/login.png)
 
-**8.Preparandonos para la exposicion de Chic & Fre**
+**8. Preparandonos para la exposicion de Chic & Fre**
 
-**Fecha:** 09 de enero
+    **Fecha:** 09 de enero
 
 Para ello hicimos una pequeña presentación explicando el problema de un usuario ficticio y las posibles soluciones que creamos.Enfocandonos en el proceso de UX.
 
-![Sketch](assets/docs/fun facts.pdf)
+    ![Sketch](assets/docs/fun facts.pdf)
 
 
 
